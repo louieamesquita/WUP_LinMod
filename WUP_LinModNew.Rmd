@@ -178,7 +178,21 @@ The correlation is Larger than SIMS~AMR and SIMS ~GRIP. With all three the value
 
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+
+The model has a residual erorr of 1.144 and an r squared of 0.5422. this model is than SIMS~GRIP and SIMS~ARM. Model is SIMS = 0.37311 ARM + 0.24470 GRIP -5.433871
+
+
 #### predict model.3 at target point
+
+```{r}
+predict.lm(model.3, mydata, interval ="prediction")
+```
+
+
   
 
 ## Comparing nested models ANOVA Test
