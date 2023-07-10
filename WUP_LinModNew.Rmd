@@ -73,11 +73,15 @@ model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
 
-
+The r- squared is 0.1406 and the residual standard error is 1.226. The more data you put into is, the more it will grow.
 
 
 #### Predict at target point
-
+```{r}
+mydata <-data.frame(GRIP=88, ARM= 104)
+predict.lm(model.1, mydata, interval ="prediction")
+```
+The Value that it predicted was 1.57 but, it can go to -0.863 to the upper interval.
 
 #### scatterplot with model fit
   
