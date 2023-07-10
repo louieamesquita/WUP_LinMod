@@ -191,13 +191,28 @@ The model has a residual erorr of 1.144 and an r squared of 0.5422. this model i
 ```{r}
 predict.lm(model.3, mydata, interval ="prediction")
 ```
-
+The interval goes from -1.71 to 2.9157
 
   
 
 ## Comparing nested models ANOVA Test
 
 ### Model.1 vs Model.3
+
+```{r}
+anova(model.1, model.3)
+```
+
+```{r}
+anova(model.2)
+```
+
+```{r}
+anova(model.2)
+```
+
+
+
 ### Model.2 vs Model.3
 
 ## Informally compare Model.1 with model.2
