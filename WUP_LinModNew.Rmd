@@ -140,6 +140,13 @@ The residual error is 1.226 and th r - squared is 0.467. the residual error is b
 
 #### predict model.2 at target point
 
+
+```{r}
+predict.lm(model.1, mydata, interval ="prediction")
+```
+The  interval is going to be -0.08634158 and 4.022199
+
+
 #### now add the model fit to our plot for model.2
   
 
