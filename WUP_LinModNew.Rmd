@@ -211,6 +211,9 @@ anova(model.2)
 anova(model.2)
 ```
 
+```{r}
+anova(model.3)
+```
 
 
 ### Model.2 vs Model.3
