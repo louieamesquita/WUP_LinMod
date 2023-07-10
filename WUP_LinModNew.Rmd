@@ -59,8 +59,22 @@ basicNN
 
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
+The numerical result is 0.6860073 between ARM ans SIMS. It is safe to to say that both variables correlate with strength 
+
+
 
 ### Inferential  (Build model.1)
+
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+
+
 
 #### Predict at target point
 
