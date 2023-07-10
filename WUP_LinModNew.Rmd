@@ -202,21 +202,20 @@ The interval goes from -1.71 to 2.9157
 ```{r}
 anova(model.1, model.3)
 ```
+This anova is giving us a p- value of 0.0000499 which does not have any value .  
 
 ```{r}
-anova(model.2)
+anova(model.2, model.3)
 ```
 
-```{r}
-anova(model.2)
-```
-
-```{r}
-anova(model.3)
-```
-
+The p value is incredibly low for model.2 and model.3. 
 
 ### Model.2 vs Model.3
+
+
+
+
+
 
 ## Informally compare Model.1 with model.2
 
