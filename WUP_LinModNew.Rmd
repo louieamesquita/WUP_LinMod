@@ -149,14 +149,33 @@ The  interval is going to be -0.08634158 and 4.022199
 
 #### now add the model fit to our plot for model.2
   
+```{r}
+mygrip <- ggplot(data, aes(y = SIMS, x = GRIP)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "SIMS ~ GRIP") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+mygrip
+
+```
+
+
+
 
 
 ## Model 3 SIM~ARM+GRIP
 
 ### Numerical results (cor)
 
-`
-  
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+The correlation is Larger than SIMS~AMR and SIMS ~GRIP. With all three the value is 0.6398458
+
+
+
+
 ### Inferential  (Build 2-dimentional model.3)
 
 #### predict model.3 at target point
