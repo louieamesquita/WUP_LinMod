@@ -217,6 +217,6 @@ The p value is incredibly low for model.2 and model.3. Model is better than mode
 ```{r}
 anova(model.1, model.2)
 ```
-we redused the error 
+we reduced the sum square error between the two models and concluded that this anova does not have p- value at all.
 
 
