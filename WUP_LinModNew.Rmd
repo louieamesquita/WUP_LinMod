@@ -106,14 +106,37 @@ basicNN
 
 ## Model 2 SIM~GRIP
 
-### Now add in scatterplot
 
+
+
+### Now add in scatterplot
+```{r}
+basicNN <- ggplot(data, aes(y = SIMS, x = ARM)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "SIMS ~ ARM") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+basicNN
+
+```
 
 ### Numerical results 
-
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+The results for SIMS and GRIP is 0.6398458. SIMS and AMR have a higher correlation than SIMS and GRIP
 
 ### Inferential  (Build model.2)
   
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.1)
+```
+The residual error is 1.226 and th r - squared is 0.467. the residual error is better than SIMS and ARM
+
+
+
 
 #### predict model.2 at target point
 
